@@ -36,28 +36,17 @@ Features:
 
 &nbsp;
 
-Example debugger output:
-```
-PINCER DEBUGGER — offline trace
-Mode: inspection only | Execution control: unavailable
+Debugger Output:
 
-STEP  TYPE    NAME                RECORDED RESULT
-01    model   synthetic-model     Ended; no reported error
-02    tool    lookup              Ended; no reported error
-03    tool    deliberate_failure  Error reported
 
-Selected: Step 02 — lookup
-Parent: demo
-Start/end: recorded
-Input: omitted from trace
-Output: omitted from trace
+https://github.com/user-attachments/assets/dd8b4054-16ca-435e-8cad-329d450b03bb
 
-Checkpoint assessment:
-  Completed boundary: yes
-  Resumable state saved: no
+Debugger currently holds a few options:
+- [list]: the default output after running the debug command on a trace file
+- [select \<step\>]: selects a step from list output for specific information for that trace step
+- [details]: provide additional information
+- [previous]/[next]: traverses trace steps individually
 
-Commands: list | select <step> | details | next | previous | quit
-```
 
 &nbsp;
   
