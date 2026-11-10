@@ -4,23 +4,11 @@ My github currently holds all of my projects; academic, personal, and otherwise.
 
 ## Overview
 ### SimpleVault
+A local-first credential manager built with Rust, Tauri, React, and SQLite. Designed around encrypted credential persistence, transactional updates, and a modular application architecture. Currently migrating from an earlier Qt/C++ implementation.
+
 <img width="695" height="595" alt="Screenshot 2026-11-05 at 7 05 13 PM" src="https://github.com/user-attachments/assets/995d729c-d34d-48e0-8bb1-e10805e79d9a" />
 
 &nbsp;
-
-Brief: SimpleVault is an in-development project that intends to store passwords, keys, phrases, and other credentials in a secure, local desktop application.
-SimpleVault was first developed in Flutter using Dart before moving to Qt to improve C++ skills. The bulk of the current iteration of the project is a result of Qt development.
-Here are a few features of the Qt/C++ version of SimpleVault:
-- Foundation for authentication flow, generating and designating a UUID for a newly registered user, functions for account creation/deletion, states for user registration status
-- Sign-in using MacOS device credential (utilizes qtkeychain as a keychain wrapper)
-- Group management, allowing add/rename/removal of a 'group' holding credential entries
-- Credential entry management; leverages a custom edit cache service that temporarily holds editing fields, updating database on focus loss/edit state change
-- Cryptography service that depends on libsodium and emphasizes zeroing
-- Local SQlite3 database
-- Foundation for frontend
-
-#### Migration
-The project is currently being migrated to Rust/Node + Tauri for improved cross-platform interop and removing current framework dependencies
 
 <img width="432" height="512" alt="Screenshot 2026-11-05 at 7 06 24 PM" src="https://github.com/user-attachments/assets/42e135e5-0f0d-4a2d-b991-e58566624dea" />
 
@@ -29,10 +17,7 @@ https://github.com/user-attachments/assets/66a71a8a-4afa-45a5-a4a4-58bbcc60196e
 &nbsp;
 
 ### Pincer
-Brief: Pincer is anticipated observability tool and debugger that would function like a playback tool for LLM processes. This is in early development and only supports OpenAI adapters at the moment.
-Features:
-- Terminal-based trace viewer that outputs relative trace information
-- Prototype of the debugger that beautifies and displays trace information
+A Python developer tool for inspecting LLM agent execution traces. Integrates with the OpenAI Agents SDK to capture structured events and provides a terminal debugger for inspecting model calls, tool invocations, and failures.
 
 &nbsp;
 
